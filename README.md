@@ -311,26 +311,6 @@ repo.deletar(1)
 - 💾 Backup e restore
 - 🗂️ Estrutura de diretórios
 
-
-### Diretrizes de Código
-
-```python
-# Use type hints
-def buscar_livro(self, id: int) -> Optional[Livro]:
-    pass
-
-# Docstrings descritivas
-def validar(self):
-    """Valida os dados do livro conforme regras de negócio"""
-    pass
-
-# Tratamento de erro robusto
-try:
-    livro = self.repository.buscar(id)
-except DatabaseError as e:
-    self.logger.error(f"Erro ao buscar livro: {e}")
-    raise ServiceError("Falha na busca") from e
-```
-
 ---
+
 
