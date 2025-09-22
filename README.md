@@ -180,19 +180,6 @@ ID    Título                    Autor           Ano    Preço
 1     O Senhor dos Anéis       J.R.R. Tolkien  1954   R$ 45.90
 ```
 
-## 🔧 Configuração e Customização
-
-### Alterando Diretório Base
-```python
-# No main.py
-controller = LivrariaController("meu_diretorio_personalizado")
-```
-
-### Configurando Retenção de Backups
-```python
-# No file_manager.py, método _limpar_backups_antigos
-def _limpar_backups_antigos(self, manter: int = 10):  # Manter 10 em vez de 5
-```
 
 ## 🧪 Testes e Validação
 
@@ -320,12 +307,7 @@ livro = repo.buscar_por_id(1)
 repo.atualizar(livro_obj)
 repo.deletar(1)
 ```
-
-## 🎓 Conceitos Educacionais
-
-### Para Estudantes de Programação
-
-Este projeto apresenta conceitos importantes:
+---
 
 **Arquitetura de Software:**
 - 🏗️ Separação de responsabilidades (MVC)
@@ -372,54 +354,4 @@ except DatabaseError as e:
     raise ServiceError("Falha na busca") from e
 ```
 
-## 📞 Suporte
-
-### Obtendo Ajuda
-
-- 📚 **Documentação**: Leia este README completo
-- 🐛 **Issues**: Reporte bugs no repositório
-- 💡 **Features**: Sugira melhorias
-- 📧 **Contato**: Entre em contato para dúvidas
-
-### FAQ
-
-**P: Posso usar outro banco de dados?**
-R: Sim! Modifique o `DatabaseManager` para usar PostgreSQL, MySQL, etc.
-
-**P: Como adicionar novos campos ao livro?**
-R: Atualize a classe `Livro` e execute migração no banco.
-
-**P: É possível fazer interface gráfica?**
-R: Absolutamente! Crie uma nova view (ex: `tkinter_view.py`)
-
-**P: Suporta múltiplos usuários?**
-R: Atualmente não, mas pode ser implementado facilmente.
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para fins educacionais. Sinta-se livre para usar, modificar e distribuir conforme necessário para seus estudos e projetos.
-
 ---
-
-## 🎉 Conclusão
-
-Este sistema demonstra como construir uma aplicação robusta e bem estruturada usando Python puro. A arquitetura MVC facilita manutenção, testes e extensões futuras.
-
-### 🎯 Objetivos Alcançados
-
-- ✅ **Arquitetura MVC** bem implementada
-- ✅ **CRUD completo** com SQLite
-- ✅ **Manipulação de arquivos** avançada
-- ✅ **Sistema de backup** automático
-- ✅ **Importação/Exportação** CSV
-- ✅ **Validação robusta** de dados
-- ✅ **Interface de usuário** intuitiva
-- ✅ **Tratamento de erros** completo
-- ✅ **Documentação** detalhada
-- ✅ **Padrões de projeto** aplicados
-
-**🚀 Ready to use! Bons estudos e desenvolvimento!** 
-
----
-
-*Desenvolvido com ❤️ para fins educacionais*
