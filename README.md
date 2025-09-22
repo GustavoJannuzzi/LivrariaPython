@@ -134,28 +134,6 @@ python main.py
 - `DatabaseManager`: Gerenciador de conexões SQLite
 - `LivroRepository`: Padrão Repository para operações CRUD
 
-## 🎨 Padrões de Projeto Implementados
-
-### 🏪 Repository Pattern
-- Abstração do acesso a dados
-- Interface consistente para operações CRUD
-- Facilita testes e manutenção
-
-### 🔧 Service Layer
-- Lógica de negócio centralizada
-- Orquestração entre diferentes componentes
-- Transações e validações complexas
-
-### 🏭 Dependency Injection
-- Baixo acoplamento entre componentes
-- Facilita testes unitários
-- Flexibilidade na configuração
-
-### 🔒 Context Manager
-- Gerenciamento seguro de recursos
-- Conexões de banco automáticas
-- Cleanup garantido
-
 ## 📊 Exemplo de Uso
 
 ### Adicionando um Livro
@@ -355,3 +333,4 @@ except DatabaseError as e:
 ```
 
 ---
+
